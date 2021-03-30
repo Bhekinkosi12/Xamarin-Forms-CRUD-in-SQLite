@@ -12,7 +12,7 @@ namespace SQLiteOnly
 
         private string _name;
 
-        [MaxLength(255)]
+        [MaxLength(255), unique]
         public string Name
         {
             get => _name;
